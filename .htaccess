@@ -1,0 +1,10 @@
+# Projet statique sans NPM
+# Fallback utile si le site est servi sur Apache et qu’une route React est appelée directement.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>

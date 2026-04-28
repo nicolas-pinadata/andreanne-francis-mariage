@@ -1,0 +1,10 @@
+{
+  "name": "Andréanne & Francis",
+  "short_name": "A & F",
+  "description": "Site de mariage statique pour Andréanne et Francis.",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#30453b",
+  "background_color": "#ffffff",
+  "scope": "."
+}
