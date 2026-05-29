@@ -4,18 +4,18 @@
       <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2330453b'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-size='22' fill='white'%3EA%26F%3C/text%3E%3C/svg%3E">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="manifest" href="manifest.json">
-      <title>Andréanne &amp; Francis</title>
+      <title>Francis &amp; Andréanne</title>
       <link rel="stylesheet" crossorigin="" href="assets/index-DB42JtjG.css">
    </head>
    <body cz-shortcut-listen="true">
       <div id="root">
          <div class="min-h-screen font-body">
-            <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-transparent">
+            <header data-site-header class="absolute top-0 left-0 right-0 z-50 transition-all duration-500 bg-transparent">
                <div class="max-w-7xl mx-auto px-6 lg:px-10">
                   <div class="flex items-center justify-between h-16 lg:h-20">
-                     <a href="#" class="font-display text-xl lg:text-2xl tracking-wide transition-colors duration-500 text-white">Andréanne <span class="font-accent italic font-light">&amp;</span> Francis</a>
-                     <nav class="hidden lg:flex items-center gap-8"><a href="#histoire" class="text-sm font-body tracking-wider uppercase transition-colors duration-500 hover:opacity-70 text-white/85">Notre histoire</a><a href="#horaire" class="text-sm font-body tracking-wider uppercase transition-colors duration-500 hover:opacity-70 text-white/85">Horaire</a><a href="#lieu" class="text-sm font-body tracking-wider uppercase transition-colors duration-500 hover:opacity-70 text-white/85">Lieu</a><a href="#galerie" class="text-sm font-body tracking-wider uppercase transition-colors duration-500 hover:opacity-70 text-white/85">Galerie</a><a href="#rsvp" class="text-sm font-body tracking-wider uppercase transition-colors duration-500 hover:opacity-70 text-white/85">RSVP</a><a href="#faq" class="text-sm font-body tracking-wider uppercase transition-colors duration-500 hover:opacity-70 text-white/85">FAQ</a></nav>
-                     <button type="button" data-menu-button aria-controls="mobile-menu" aria-expanded="false" aria-label="Ouvrir le menu" class="lg:hidden transition-colors duration-500 text-white">
+                     <a href="#" data-header-brand class="font-display text-xl lg:text-2xl tracking-wide transition-colors duration-500 text-white">Francis <span class="font-accent italic font-light">&amp;</span> Andréanne</a>
+                     <nav class="hidden lg:flex items-center gap-8"><a href="#histoire" data-header-link class="text-sm font-body tracking-wider uppercase transition-colors duration-500 hover:opacity-70 text-white/85">Notre histoire</a><a href="#horaire" data-header-link class="text-sm font-body tracking-wider uppercase transition-colors duration-500 hover:opacity-70 text-white/85">Horaire</a><a href="#lieu" data-header-link class="text-sm font-body tracking-wider uppercase transition-colors duration-500 hover:opacity-70 text-white/85">Lieu</a><a href="#galerie" data-header-link class="text-sm font-body tracking-wider uppercase transition-colors duration-500 hover:opacity-70 text-white/85">Galerie</a><a href="#rsvp" data-header-link class="text-sm font-body tracking-wider uppercase transition-colors duration-500 hover:opacity-70 text-white/85">RSVP</a><a href="#faq" data-header-link class="text-sm font-body tracking-wider uppercase transition-colors duration-500 hover:opacity-70 text-white/85">FAQ</a></nav>
+                     <button type="button" data-menu-button data-header-toggle aria-controls="mobile-menu" aria-expanded="false" aria-label="Ouvrir le menu" class="lg:hidden transition-colors duration-500 text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu w-6 h-6">
                            <line x1="4" x2="20" y1="12" y2="12"></line>
                            <line x1="4" x2="20" y1="6" y2="6"></line>
@@ -24,26 +24,26 @@
                      </button>
                   </div>
                </div>
-               <nav id="mobile-menu" data-mobile-menu class="lg:hidden hidden" style="background: rgba(48, 69, 59, 0.96); backdrop-filter: blur(12px); border-top: 1px solid rgba(255,255,255,0.12); box-shadow: 0 18px 35px rgba(0,0,0,0.18);">
+               <nav id="mobile-menu" data-mobile-menu class="lg:hidden hidden transition-colors duration-500" style="background: rgba(48, 69, 59, 0.96); backdrop-filter: blur(12px); border-top: 1px solid rgba(255,255,255,0.12); box-shadow: 0 18px 35px rgba(0,0,0,0.18);">
                   <div class="px-6 py-4">
-                     <a href="#histoire" class="block text-sm font-body tracking-wider uppercase text-white/90 py-3" style="border-bottom: 1px solid rgba(255,255,255,0.10);">Notre histoire</a>
-                     <a href="#horaire" class="block text-sm font-body tracking-wider uppercase text-white/90 py-3" style="border-bottom: 1px solid rgba(255,255,255,0.10);">Horaire</a>
-                     <a href="#lieu" class="block text-sm font-body tracking-wider uppercase text-white/90 py-3" style="border-bottom: 1px solid rgba(255,255,255,0.10);">Lieu</a>
-                     <a href="#galerie" class="block text-sm font-body tracking-wider uppercase text-white/90 py-3" style="border-bottom: 1px solid rgba(255,255,255,0.10);">Galerie</a>
-                     <a href="#rsvp" class="block text-sm font-body tracking-wider uppercase text-white/90 py-3" style="border-bottom: 1px solid rgba(255,255,255,0.10);">RSVP</a>
-                     <a href="#faq" class="block text-sm font-body tracking-wider uppercase text-white/90 py-3">FAQ</a>
+                     <a href="#histoire" data-header-link class="block text-sm font-body tracking-wider uppercase transition-colors duration-500 text-white/90 py-3" style="border-bottom: 1px solid rgba(255,255,255,0.10);">Notre histoire</a>
+                     <a href="#horaire" data-header-link class="block text-sm font-body tracking-wider uppercase transition-colors duration-500 text-white/90 py-3" style="border-bottom: 1px solid rgba(255,255,255,0.10);">Horaire</a>
+                     <a href="#lieu" data-header-link class="block text-sm font-body tracking-wider uppercase transition-colors duration-500 text-white/90 py-3" style="border-bottom: 1px solid rgba(255,255,255,0.10);">Lieu</a>
+                     <a href="#galerie" data-header-link class="block text-sm font-body tracking-wider uppercase transition-colors duration-500 text-white/90 py-3" style="border-bottom: 1px solid rgba(255,255,255,0.10);">Galerie</a>
+                     <a href="#rsvp" data-header-link class="block text-sm font-body tracking-wider uppercase transition-colors duration-500 text-white/90 py-3" style="border-bottom: 1px solid rgba(255,255,255,0.10);">RSVP</a>
+                     <a href="#faq" data-header-link class="block text-sm font-body tracking-wider uppercase transition-colors duration-500 text-white/90 py-3">FAQ</a>
                   </div>
                </nav>
             </header>
             <section id="hero" class="relative h-screen min-h-[700px] overflow-hidden">
                <div class="absolute inset-0">
-                  <img src="assets/images/hero.jpg" alt="Andréanne et Francis" class="w-full h-full object-cover object-top">
+                  <img src="assets/images/hero.jpg" alt="Francis et Andréanne" class="w-full h-full object-cover object-top">
                   <div class="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/55"></div>
                   <div class="absolute inset-0" style="background: linear-gradient(rgba(24, 37, 31, 0.15), rgba(20, 31, 26, 0.35));"></div>
                </div>
                <div class="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
                   <p class="font-body text-sm md:text-base tracking-[0.3em] uppercase text-white/80 mb-2" style="opacity: 1; transform: none;">10 octobre 2026</p>
-                  <h1 class="font-display text-5xl sm:text-6xl text-white leading-tight mb-6" style="opacity: 1; transform: none;">Andréanne &amp; Francis</h1>
+                  <h1 class="font-display text-5xl sm:text-6xl text-white leading-tight mb-6" style="opacity: 1; transform: none;">Francis &amp; Andréanne</h1>
                   <p class="font-body italic text-white/75 text-base md:text-lg max-w-md mb-10" style="opacity: 1; transform: none;">Nous avons hâte de célébrer ce jour avec&nbsp;vous.</p>
                </div>
                <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10" style="opacity: 1;">
@@ -59,7 +59,7 @@
                <div class="max-w-6xl mx-auto px-6 lg:px-10">
                   <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                      <div class="relative" style="opacity: 1; transform: none;">
-                        <div class="aspect-[3/4] rounded-2xl overflow-hidden shadow-xl"><img src="assets/images/histoire.jpg" alt="Andréanne et Francis" class="w-full h-full object-cover"></div>
+                        <div class="aspect-[3/4] rounded-2xl overflow-hidden shadow-xl"><img src="assets/images/histoire.jpg" alt="Francis et Andréanne" class="w-full h-full object-cover"></div>
                         <div class="absolute -bottom-4 -right-4 w-32 h-32 rounded-2xl bg-secondary/60 -z-10"></div>
                      </div>
                      <div style="opacity: 1; transform: none;">
@@ -79,28 +79,23 @@
                   <div style="opacity: 1; transform: none;">
                      <p class="font-body text-sm tracking-[0.25em] uppercase text-muted-foreground mb-4">Samedi 10 octobre 2026</p>
                      <h2 class="font-display text-3xl md:text-4xl lg:text-5xl text-primary mb-4">Déroulement de la journée</h2>
-                     <p class="font-body text-foreground/60 text-base max-w-md mx-auto mb-16">Un horaire détaillé du week-end complet sera partagé sous peu.</p>
                   </div>
                   <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
                      <div class="bg-card rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300" style="opacity: 1; transform: none;">
                         <span class="font-accent text-3xl md:text-4xl text-accent font-light">16h00</span>
                         <h3 class="font-display text-lg text-primary mt-4 mb-2">Cérémonie</h3>
-                        <p class="font-body text-sm text-muted-foreground">Échange des vœux en plein air</p>
                      </div>
                      <div class="bg-card rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300" style="opacity: 1; transform: none;">
                         <span class="font-accent text-3xl md:text-4xl text-accent font-light">17h00</span>
                         <h3 class="font-display text-lg text-primary mt-4 mb-2">Cocktail</h3>
-                        <p class="font-body text-sm text-muted-foreground">Apéritif et bouchées</p>
                      </div>
                      <div class="bg-card rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300" style="opacity: 1; transform: none;">
                         <span class="font-accent text-3xl md:text-4xl text-accent font-light">18h00</span>
                         <h3 class="font-display text-lg text-primary mt-4 mb-2">Souper</h3>
-                        <p class="font-body text-sm text-muted-foreground">Formule buffet</p>
                      </div>
                      <div class="bg-card rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300" style="opacity: 1; transform: none;">
                         <span class="font-accent text-3xl md:text-4xl text-accent font-light">20h00</span>
                         <h3 class="font-display text-lg text-primary mt-4 mb-2">Soirée</h3>
-                        <p class="font-body text-sm text-muted-foreground">Musique, danse et célébrations</p>
                      </div>
                   </div>
                </div>
@@ -116,10 +111,11 @@
                               <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
                               <circle cx="12" cy="10" r="3"></circle>
                            </svg>
-                           <p class="font-body text-foreground/70">Sainte-Mélanie, Québec<br><span class="text-sm text-muted-foreground">La cérémonie et la réception ont lieu au même endroit.</span></p>
+                           <p class="font-body text-foreground/70">1326 8e Rang, Sainte-Mélanie, QC J0K 3A0<br><span class="text-sm text-muted-foreground">La cérémonie et la réception ont lieu au même endroit.</span></p>
                         </div>
-                        <p class="font-body text-foreground/65 leading-relaxed mb-8">Niché dans un cadre naturel enchanteur, le Chic Chalet des Chutes offre un décor chaleureux et authentique, parfait pour célébrer notre union entourés de ceux qu'on aime. Stationnement disponible sur place.</p>
-                        <a href="https://maps.google.com/?q=Sainte-Melanie+Quebec" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-body text-sm tracking-wider uppercase rounded-full hover:bg-primary/90 transition-colors">
+                        <p class="font-body text-foreground/65 leading-relaxed mb-4">Niché dans un cadre naturel enchanteur, le Chic Chalet des Chutes offre un décor chaleureux et authentique, parfait pour célébrer notre union entourés de ceux qu'on aime. Stationnement disponible sur place.</p>
+                        <p class="font-body text-sm text-foreground/60 leading-relaxed mb-8">Le stationnement est limité; nous vous encourageons à privilégier le covoiturage lorsque possible.</p>
+                        <a href="https://maps.app.goo.gl/WEijjgDqSyqRu4RJ7" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-body text-sm tracking-wider uppercase rounded-full hover:bg-primary/90 transition-colors">
                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-4 h-4">
                               <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
                               <circle cx="12" cy="10" r="3"></circle>
@@ -157,19 +153,25 @@
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon w-3 h-3 mt-1.5 text-accent/60 flex-shrink-0">
                                  <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
                               </svg>
-                              3 nuitées disponibles
+                              Jusqu'à 3 nuitées disponibles
                            </li>
                            <li class="font-body text-sm text-foreground/65 flex items-start gap-2">
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon w-3 h-3 mt-1.5 text-accent/60 flex-shrink-0">
                                  <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
                               </svg>
-                              10 places au total
+                              10 places au total (5 chambres)
                            </li>
                            <li class="font-body text-sm text-foreground/65 flex items-start gap-2">
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon w-3 h-3 mt-1.5 text-accent/60 flex-shrink-0">
                                  <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
                               </svg>
-                              Réservation par le couple
+                              Contacter Andréanne au courriel auger.andreanne@gmail.com pour réserver
+                           </li>
+                           <li class="font-body text-sm text-foreground/65 flex items-start gap-2">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon w-3 h-3 mt-1.5 text-accent/60 flex-shrink-0">
+                                 <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                              </svg>
+                              Les enfants sont invités à dormir sur des matelas de sol; c'est gratuit lorsqu'aucun lit de chalet n'est requis.
                            </li>
                         </ul>
                      </div>
@@ -198,6 +200,12 @@
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon w-3 h-3 mt-1.5 text-accent/60 flex-shrink-0">
                                  <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
                               </svg>
+                              Sans service
+                           </li>
+                           <li class="font-body text-sm text-foreground/65 flex items-start gap-2">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon w-3 h-3 mt-1.5 text-accent/60 flex-shrink-0">
+                                 <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                              </svg>
                               Pour les plus courageux !
                            </li>
                         </ul>
@@ -210,7 +218,8 @@
                   <div style="opacity: 1; transform: translateY(20px);">
                      <p class="font-body text-sm tracking-[0.25em] uppercase text-muted-foreground mb-4">Souper &amp; célébration</p>
                      <h2 class="font-display text-3xl md:text-[2rem] lg:text-4xl text-primary mb-4">Prix d'entrée et repas</h2>
-                     <p class="font-body text-foreground/60 max-w-md mx-auto mb-14">Le repas est servi en formule buffet. Aucun choix de menu à faire à l'avance — il y en aura pour tous les goûts.</p>
+                     <p class="font-body text-foreground/60 max-w-md mx-auto mb-4">Le repas est servi en formule buffet. Aucun choix de menu à faire à l'avance — il y en aura pour tous les goûts.</p>
+                     <p class="font-body text-sm text-foreground/60 max-w-md mx-auto mb-14">Votre billet inclut les consommations lors du cocktail et du souper. Pour la suite de la soirée, il y aura un bar payant; S.V.P. prévoir de l'argent comptant.</p>
                   </div>
                   <div class="bg-card rounded-2xl shadow-sm overflow-hidden" style="opacity: 1; transform: none;">
                      <div class="flex items-center justify-between px-8 py-5 border-b border-border/50"><span class="font-body text-foreground/75">Adulte</span><span class="font-display text-xl text-primary">100 $</span></div>
@@ -228,7 +237,7 @@
                      </svg>
                      <h2 class="font-display text-3xl md:text-[2rem] lg:text-4xl text-primary mb-4">Merci de confirmer votre présence</h2>
                      <p class="font-body text-foreground/60 max-w-md mx-auto mb-4">Nous serions honorés de vous compter parmi nous pour cette journée spéciale. Un formulaire simple vous permettra de confirmer votre présence.</p>
-                     <p class="font-body text-sm text-muted-foreground mb-8">Un champ sera prévu pour signaler toute allergie ou restriction alimentaire.<br><span class="italic">Date limite de confirmation à venir.</span></p>
+                     <p class="font-body text-sm text-muted-foreground mb-8">Un champ sera prévu pour signaler toute allergie ou restriction alimentaire.<br><span class="italic">Merci de nous répondre d'ici le 31 août pour confirmer votre présence.</span></p>
                      <a href="#" class="inline-flex items-center gap-2 px-10 py-4 bg-accent text-white font-body text-sm tracking-widest uppercase rounded-full hover:bg-accent/90 transition-all duration-300 shadow-lg">Confirmer ma présence</a>
                      <p class="font-body text-xs text-muted-foreground mt-6">Environ 70-75 invités attendus</p>
                   </div>
@@ -242,40 +251,40 @@
                   </div>
                   <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
                      <div class="cursor-pointer group" style="opacity: 1; transform: none;">
-                        <div class="overflow-hidden rounded-xl shadow-sm aspect-[3/4]"><img src="assets/images/1.jpg" alt="Photo 1" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
+                        <div class="overflow-hidden rounded-xl shadow-sm aspect-[3/4]"><img src="assets/images/1.jpg" alt="Photo 1" data-gallery-image class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
                      </div>
                      <div class="cursor-pointer group" style="opacity: 1; transform: none;">
-                        <div class="overflow-hidden rounded-xl shadow-sm aspect-[3/4]"><img src="assets/images/2.jpg" alt="Photo 2" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
+                        <div class="overflow-hidden rounded-xl shadow-sm aspect-[3/4]"><img src="assets/images/2.jpg" alt="Photo 2" data-gallery-image class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
                      </div>
                      <div class="cursor-pointer group" style="opacity: 1; transform: none;">
-                        <div class="overflow-hidden rounded-xl shadow-sm aspect-[3/4]"><img src="assets/images/3.jpg" alt="Photo 3" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
+                        <div class="overflow-hidden rounded-xl shadow-sm aspect-[3/4]"><img src="assets/images/3.jpg" alt="Photo 3" data-gallery-image class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
                      </div>
                      <div class="cursor-pointer group" style="opacity: 1; transform: none;">
-                        <div class="overflow-hidden rounded-xl shadow-sm aspect-[3/4]"><img src="assets/images/4.jpg" alt="Photo 4" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
+                        <div class="overflow-hidden rounded-xl shadow-sm aspect-[3/4]"><img src="assets/images/4.jpg" alt="Photo 4" data-gallery-image class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
                      </div>
                      <div class="cursor-pointer group" style="opacity: 1; transform: none;">
-                        <div class="overflow-hidden rounded-xl shadow-sm aspect-[3/4]"><img src="assets/images/5.jpg" alt="Photo 5" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
+                        <div class="overflow-hidden rounded-xl shadow-sm aspect-[3/4]"><img src="assets/images/5.jpg" alt="Photo 5" data-gallery-image class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
                      </div>
                      <div class="cursor-pointer group" style="opacity: 1; transform: none;">
-                        <div class="overflow-hidden rounded-xl shadow-sm aspect-[3/4]"><img src="assets/images/6.jpg" alt="Photo 6" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
+                        <div class="overflow-hidden rounded-xl shadow-sm aspect-[3/4]"><img src="assets/images/6.jpg" alt="Photo 6" data-gallery-image class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
                      </div>
                      <div class="cursor-pointer group" style="opacity: 1; transform: none;">
-                        <div class="overflow-hidden rounded-xl shadow-sm aspect-[3/4]"><img src="assets/images/7.jpg" alt="Photo 7" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
+                        <div class="overflow-hidden rounded-xl shadow-sm aspect-[3/4]"><img src="assets/images/7.jpg" alt="Photo 7" data-gallery-image class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
                      </div>
                      <div class="cursor-pointer group" style="opacity: 1; transform: none;">
-                        <div class="overflow-hidden rounded-xl shadow-sm aspect-[3/4]"><img src="assets/images/8.jpg" alt="Photo 8" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
+                        <div class="overflow-hidden rounded-xl shadow-sm aspect-[3/4]"><img src="assets/images/8.jpg" alt="Photo 8" data-gallery-image class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
                      </div>
                      <div class="cursor-pointer group" style="opacity: 1; transform: none;">
-                        <div class="overflow-hidden rounded-xl shadow-sm aspect-[3/4]"><img src="assets/images/9.jpg" alt="Photo 9" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
+                        <div class="overflow-hidden rounded-xl shadow-sm aspect-[3/4]"><img src="assets/images/9.jpg" alt="Photo 9" data-gallery-image class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
                      </div>
                      <div class="cursor-pointer group" style="opacity: 1; transform: none;">
-                        <div class="overflow-hidden rounded-xl shadow-sm aspect-[3/4]"><img src="assets/images/10.jpg" alt="Photo 10" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
+                        <div class="overflow-hidden rounded-xl shadow-sm aspect-[3/4]"><img src="assets/images/10.jpg" alt="Photo 10" data-gallery-image class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
                      </div>
                      <div class="cursor-pointer group" style="opacity: 1; transform: none;">
-                        <div class="overflow-hidden rounded-xl shadow-sm aspect-[3/4]"><img src="assets/images/11.jpg" alt="Photo 11" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
+                        <div class="overflow-hidden rounded-xl shadow-sm aspect-[3/4]"><img src="assets/images/11.jpg" alt="Photo 11" data-gallery-image class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
                      </div>
                      <div class="cursor-pointer group" style="opacity: 1; transform: none;">
-                        <div class="overflow-hidden rounded-xl shadow-sm aspect-[3/4]"><img src="assets/images/12.jpg" alt="Photo 12" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
+                        <div class="overflow-hidden rounded-xl shadow-sm aspect-[3/4]"><img src="assets/images/12.jpg" alt="Photo 12" data-gallery-image class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
                      </div>
                   </div>
                </div>
@@ -309,7 +318,7 @@
                               Quand doit-on confirmer notre présence ?
                            </summary>
                            <div class="font-body text-foreground/65 pb-5 leading-relaxed">
-                              La date limite de confirmation sera communiquée sous peu. Nous vous tiendrons au courant par message — restez à l'affût !
+                              Merci de nous répondre d'ici le 31 août pour confirmer votre présence. Nous vous tiendrons au courant par message; restez à l'affût !
                            </div>
                         </details>
 
@@ -318,7 +327,52 @@
                               Y a-t-il des options d'hébergement sur place ?
                            </summary>
                            <div class="font-body text-foreground/65 pb-5 leading-relaxed">
-                              Oui ! Le chalet peut accueillir jusqu'à 10 personnes pour 3 nuitées. Il est aussi possible de venir avec une tente ou une roulotte pour une nuit maximum, gratuitement.
+                              Oui. Le chalet peut accueillir jusqu'à 10 personnes dans 5 chambres pour un maximum de 3 nuitées. Il est aussi possible de venir avec une tente ou une roulotte pour une nuit maximum, gratuitement et sans service.
+                           </div>
+                        </details>
+
+                        <details class="bg-card rounded-xl border border-border/50 px-6 shadow-sm">
+                           <summary class="font-display text-base md:text-lg text-primary py-5 cursor-pointer">
+                              Y a-t-il un code vestimentaire ?
+                           </summary>
+                           <div class="font-body text-foreground/65 pb-5 leading-relaxed">
+                              Nous vous invitons à porter une tenue chic, tout en restant assez confortable pour profiter du plancher de danse. Le blanc, le crème et l'orange sont réservés au cortège. Comme le mariage aura lieu en octobre, prévoyez aussi une veste pour la soirée.
+                           </div>
+                        </details>
+
+                        <details class="bg-card rounded-xl border border-border/50 px-6 shadow-sm">
+                           <summary class="font-display text-base md:text-lg text-primary py-5 cursor-pointer">
+                              Le stationnement est-il disponible sur place ?
+                           </summary>
+                           <div class="font-body text-foreground/65 pb-5 leading-relaxed">
+                              Le stationnement gratuit est limité sur place. Nous vous encourageons à privilégier le covoiturage lorsque possible.
+                           </div>
+                        </details>
+
+                        <details class="bg-card rounded-xl border border-border/50 px-6 shadow-sm">
+                           <summary class="font-display text-base md:text-lg text-primary py-5 cursor-pointer">
+                              Quel cadeau peut-on offrir aux mariés ?
+                           </summary>
+                           <div class="font-body text-foreground/65 pb-5 leading-relaxed">
+                              Votre présence est le plus beau cadeau. Pour ceux qui souhaitent contribuer, un pot sera disponible afin de nous aider à nous offrir une nuit de noces.
+                           </div>
+                        </details>
+
+                        <details class="bg-card rounded-xl border border-border/50 px-6 shadow-sm">
+                           <summary class="font-display text-base md:text-lg text-primary py-5 cursor-pointer">
+                              Les animaux sont-ils autorisés ?
+                           </summary>
+                           <div class="font-body text-foreground/65 pb-5 leading-relaxed">
+                              Les animaux ne sont pas autorisés sur le site, afin d'assurer le bon déroulement de la journée et le confort de tous les invités.
+                           </div>
+                        </details>
+
+                        <details class="bg-card rounded-xl border border-border/50 px-6 shadow-sm">
+                           <summary class="font-display text-base md:text-lg text-primary py-5 cursor-pointer">
+                              À quelle heure se termine la soirée ?
+                           </summary>
+                           <div class="font-body text-foreground/65 pb-5 leading-relaxed">
+                              La musique jouera environ jusqu'à 2 h du matin. Pour ceux qui souhaitent poursuivre la fête, il sera possible de se retrouver dans les chalets par la suite.
                            </div>
                         </details>
                      </div>
@@ -327,8 +381,8 @@
             </section>
             <footer class="py-16 bg-primary text-primary-foreground">
                <div class="max-w-4xl mx-auto px-6 text-center">
-                  <h3 class="font-display text-3xl md:text-4xl mb-3">Andréanne <span class="font-accent italic font-light">&amp;</span> Francis</h3>
-                  <p class="font-body text-primary-foreground/60 text-sm tracking-wider">10 octobre 2026 · Sainte-Mélanie</p>
+                  <h3 class="font-display text-3xl md:text-4xl mb-3">Francis <span class="font-accent italic font-light">&amp;</span> Andréanne</h3>
+                  <p class="font-body text-primary-foreground/60 text-sm tracking-wider">10 octobre 2026 · 1326 8e Rang, Sainte-Mélanie, QC J0K 3A0</p>
                   <div class="w-12 h-px bg-primary-foreground/20 mx-auto my-6"></div>
                   <p class="font-body text-primary-foreground/40 text-xs tracking-wider">Au Chic Chalet des Chutes</p>
                </div>
@@ -338,11 +392,83 @@
             <div class="fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]"></div>
          </div>
       </div>
-
+      <div id="gallery-lightbox" class="fixed inset-0 z-[200] hidden items-center justify-center bg-black/90 p-4 md:p-8" role="dialog" aria-modal="true" aria-label="Photo agrandie">
+         <button type="button" data-lightbox-close class="absolute right-5 top-5 inline-flex h-11 w-11 items-center justify-center rounded-full bg-white/95 text-2xl leading-none text-black shadow-lg transition hover:bg-white" aria-label="Fermer la photo">&times;</button>
+         <img data-lightbox-image src="" alt="" class="max-h-[92vh] max-w-full rounded-lg object-contain shadow-2xl">
+      </div>
       <script>
          document.addEventListener('DOMContentLoaded', function () {
+            const header = document.querySelector('[data-site-header]');
+            const brand = document.querySelector('[data-header-brand]');
+            const headerLinks = document.querySelectorAll('[data-header-link]');
+            const toggle = document.querySelector('[data-header-toggle]');
             const button = document.querySelector('[data-menu-button]');
             const menu = document.querySelector('[data-mobile-menu]');
+            const lightbox = document.getElementById('gallery-lightbox');
+            const lightboxImage = document.querySelector('[data-lightbox-image]');
+            const lightboxClose = document.querySelector('[data-lightbox-close]');
+            const galleryImages = document.querySelectorAll('#galerie img[data-gallery-image]');
+
+            const closeLightbox = function () {
+               if (!lightbox || !lightboxImage) return;
+               lightbox.classList.add('hidden');
+               lightbox.classList.remove('flex');
+               lightboxImage.removeAttribute('src');
+               lightboxImage.alt = '';
+               document.body.style.overflow = '';
+            };
+
+            galleryImages.forEach(function (image) {
+               image.addEventListener('click', function () {
+                  if (!lightbox || !lightboxImage) return;
+                  lightboxImage.src = image.currentSrc || image.src;
+                  lightboxImage.alt = image.alt || 'Photo de la galerie';
+                  lightbox.classList.remove('hidden');
+                  lightbox.classList.add('flex');
+                  document.body.style.overflow = 'hidden';
+               });
+            });
+
+            if (lightbox) {
+               lightbox.addEventListener('click', function (event) {
+                  if (event.target === lightbox) closeLightbox();
+               });
+            }
+
+            if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+
+            document.addEventListener('keydown', function (event) {
+               if (event.key === 'Escape') closeLightbox();
+            });
+
+
+            const setScrolledHeader = function () {
+               const isScrolled = window.scrollY > 0;
+
+               if (header) {
+                  header.classList.toggle('absolute', !isScrolled);
+                  header.classList.toggle('fixed', isScrolled);
+                  header.classList.toggle('bg-transparent', !isScrolled);
+                  header.classList.toggle('bg-white', isScrolled);
+                  header.classList.toggle('shadow-sm', isScrolled);
+               }
+
+               if (brand) brand.style.color = isScrolled ? '#000' : '';
+
+               headerLinks.forEach(function (link) {
+                  link.style.color = isScrolled ? '#000' : '';
+               });
+
+               if (toggle) toggle.style.color = isScrolled ? '#000' : '';
+
+               if (menu) {
+                  menu.style.background = isScrolled ? '#fff' : 'rgba(48, 69, 59, 0.96)';
+                  menu.style.borderTop = isScrolled ? '1px solid rgba(0,0,0,0.10)' : '1px solid rgba(255,255,255,0.12)';
+               }
+            };
+
+            setScrolledHeader();
+            window.addEventListener('scroll', setScrolledHeader, { passive: true });
 
             if (!button || !menu) return;
 

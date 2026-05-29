@@ -1,4 +1,4 @@
-# Andréanne & Francis — projet statique sans NPM
+# Francis & Andréanne — projet statique sans NPM
 
 Ce dossier est une version statique du preview Base44, préparée pour fonctionner sans `npm install`, sans Vite et sans serveur Node.
 
