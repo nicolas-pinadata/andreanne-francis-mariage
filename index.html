@@ -11,29 +11,17 @@
       <div id="root">
          <div class="min-h-screen font-body">
             <header data-site-header class="absolute top-0 left-0 right-0 z-50 transition-all duration-500 bg-transparent">
-               <div class="max-w-7xl mx-auto px-6 lg:px-10">
-                  <div class="flex items-center justify-between h-16 lg:h-20">
+               <div class="w-full px-6 lg:px-10">
+                  <div class="flex w-full items-center justify-between lg:justify-between h-16 lg:h-20">
                      <a href="#" data-header-brand class="font-display text-xl lg:text-2xl tracking-wide transition-colors duration-500 text-white">Francis <span class="font-accent italic font-light">&amp;</span> Andréanne</a>
-                     <nav class="hidden lg:flex items-center gap-8"><a href="#histoire" data-header-link class="text-sm font-body tracking-wider uppercase transition-colors duration-500 hover:opacity-70 text-white/85">Notre histoire</a><a href="#horaire" data-header-link class="text-sm font-body tracking-wider uppercase transition-colors duration-500 hover:opacity-70 text-white/85">Horaire</a><a href="#lieu" data-header-link class="text-sm font-body tracking-wider uppercase transition-colors duration-500 hover:opacity-70 text-white/85">Lieu</a><a href="#galerie" data-header-link class="text-sm font-body tracking-wider uppercase transition-colors duration-500 hover:opacity-70 text-white/85">Galerie</a><a href="#rsvp" data-header-link class="text-sm font-body tracking-wider uppercase transition-colors duration-500 hover:opacity-70 text-white/85">RSVP</a><a href="#faq" data-header-link class="text-sm font-body tracking-wider uppercase transition-colors duration-500 hover:opacity-70 text-white/85">FAQ</a></nav>
-                     <button type="button" data-menu-button data-header-toggle aria-controls="mobile-menu" aria-expanded="false" aria-label="Ouvrir le menu" class="lg:hidden transition-colors duration-500 text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu w-6 h-6">
-                           <line x1="4" x2="20" y1="12" y2="12"></line>
-                           <line x1="4" x2="20" y1="6" y2="6"></line>
-                           <line x1="4" x2="20" y1="18" y2="18"></line>
-                        </svg>
-                     </button>
+                     <a href="#rsvp" class="lg:hidden inline-flex items-center justify-center px-3 py-2 bg-accent text-white font-body text-[11px] sm:text-xs tracking-wide rounded-full shadow-sm hover:bg-accent/90 transition-colors" style="white-space: nowrap;">RSVP</a>
+                     <nav class="hidden lg:flex items-center gap-8">
+                        <a href="#rsvp" class="inline-flex items-center justify-center px-6 py-3 bg-accent text-white font-body text-sm tracking-wide rounded-full hover:bg-accent/90 transition-colors duration-300 shadow-sm">
+                           RSVP
+                        </a>
+                     </nav>
                   </div>
                </div>
-               <nav id="mobile-menu" data-mobile-menu class="lg:hidden hidden transition-colors duration-500" style="background: rgba(48, 69, 59, 0.96); backdrop-filter: blur(12px); border-top: 1px solid rgba(255,255,255,0.12); box-shadow: 0 18px 35px rgba(0,0,0,0.18);">
-                  <div class="px-6 py-4">
-                     <a href="#histoire" data-header-link class="block text-sm font-body tracking-wider uppercase transition-colors duration-500 text-white/90 py-3" style="border-bottom: 1px solid rgba(255,255,255,0.10);">Notre histoire</a>
-                     <a href="#horaire" data-header-link class="block text-sm font-body tracking-wider uppercase transition-colors duration-500 text-white/90 py-3" style="border-bottom: 1px solid rgba(255,255,255,0.10);">Horaire</a>
-                     <a href="#lieu" data-header-link class="block text-sm font-body tracking-wider uppercase transition-colors duration-500 text-white/90 py-3" style="border-bottom: 1px solid rgba(255,255,255,0.10);">Lieu</a>
-                     <a href="#galerie" data-header-link class="block text-sm font-body tracking-wider uppercase transition-colors duration-500 text-white/90 py-3" style="border-bottom: 1px solid rgba(255,255,255,0.10);">Galerie</a>
-                     <a href="#rsvp" data-header-link class="block text-sm font-body tracking-wider uppercase transition-colors duration-500 text-white/90 py-3" style="border-bottom: 1px solid rgba(255,255,255,0.10);">RSVP</a>
-                     <a href="#faq" data-header-link class="block text-sm font-body tracking-wider uppercase transition-colors duration-500 text-white/90 py-3">FAQ</a>
-                  </div>
-               </nav>
             </header>
             <section id="hero" class="relative h-screen min-h-[700px] overflow-hidden">
                <div class="absolute inset-0">
@@ -78,12 +66,12 @@
                </div>
             </section>
             <section id="horaire" class="py-24 md:py-32 bg-secondary/40">
-               <div class="max-w-5xl mx-auto px-6 lg:px-10 text-center">
-                  <div style="opacity: 1; transform: none;">
+               <div class="max-w-4xl mx-auto px-6 lg:px-10 text-center">
+                  <div class="mb-14" style="opacity: 1; transform: none;">
                      <p class="font-body text-sm tracking-[0.25em] uppercase text-muted-foreground mb-4">Samedi 10 octobre 2026</p>
                      <h2 class="font-display text-3xl md:text-4xl lg:text-5xl text-primary mb-4">Déroulement de la journée</h2>
                   </div>
-                  <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                  <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 mt-8">
                      <div class="bg-card rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300" style="opacity: 1; transform: none;">
                         <span class="font-accent text-3xl md:text-4xl text-accent font-light">15h00</span>
                         <h3 class="font-display text-lg text-primary mt-4 mb-2">Arrivée des invités</h3>
@@ -110,7 +98,7 @@
             <section id="lieu" class="py-24 md:py-32 bg-background">
                <div class="max-w-6xl mx-auto px-6 lg:px-10">
                   <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
-                     <div class="order-2 lg:order-1" style="opacity: 1; transform: translateX(-30px);">
+                     <div class="order-2 lg:order-1" style="opacity: 1;">
                         <p class="font-body text-sm tracking-[0.25em] uppercase text-muted-foreground mb-4">Lieu de célébration</p>
                         <h2 class="font-display text-3xl md:text-[2rem] lg:text-4xl text-primary mb-6 leading-tight">Au Chic Chalet des Chutes</h2>
                         <div class="flex items-start gap-3 mb-6">
@@ -135,7 +123,7 @@
                            </svg>
                         </a>
                      </div>
-                     <div class="order-1 lg:order-2" style="opacity: 1; transform: translateX(30px);">
+                     <div class="order-1 lg:order-2" style="opacity: 1;">
                         <div class="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl"><img src="assets/images/lieu.jpg" alt="Au Chic Chalet des Chutes" class="w-full h-full object-cover"></div>
                      </div>
                   </div>
@@ -416,9 +404,6 @@
             const header = document.querySelector('[data-site-header]');
             const brand = document.querySelector('[data-header-brand]');
             const headerLinks = document.querySelectorAll('[data-header-link]');
-            const toggle = document.querySelector('[data-header-toggle]');
-            const button = document.querySelector('[data-menu-button]');
-            const menu = document.querySelector('[data-mobile-menu]');
             const lightbox = document.getElementById('gallery-lightbox');
             const lightboxImage = document.querySelector('[data-lightbox-image]');
             const lightboxClose = document.querySelector('[data-lightbox-close]');
@@ -474,50 +459,10 @@
                   link.style.color = isScrolled ? '#000' : '';
                });
 
-               if (toggle) toggle.style.color = isScrolled ? '#000' : '';
-
-               if (menu) {
-                  menu.style.background = isScrolled ? '#fff' : 'rgba(48, 69, 59, 0.96)';
-                  menu.style.borderTop = isScrolled ? '1px solid rgba(0,0,0,0.10)' : '1px solid rgba(255,255,255,0.12)';
-               }
             };
 
             setScrolledHeader();
             window.addEventListener('scroll', setScrolledHeader, { passive: true });
-
-            if (!button || !menu) return;
-
-            const openMenu = function () {
-               menu.classList.remove('hidden');
-               button.setAttribute('aria-expanded', 'true');
-               button.setAttribute('aria-label', 'Fermer le menu');
-            };
-
-            const closeMenu = function () {
-               menu.classList.add('hidden');
-               button.setAttribute('aria-expanded', 'false');
-               button.setAttribute('aria-label', 'Ouvrir le menu');
-            };
-
-            button.addEventListener('click', function () {
-               if (menu.classList.contains('hidden')) {
-                  openMenu();
-               } else {
-                  closeMenu();
-               }
-            });
-
-            menu.querySelectorAll('a').forEach(function (link) {
-               link.addEventListener('click', closeMenu);
-            });
-
-            document.addEventListener('keydown', function (event) {
-               if (event.key === 'Escape') closeMenu();
-            });
-
-            window.addEventListener('resize', function () {
-               if (window.innerWidth >= 1024) closeMenu();
-            });
          });
       </script>
    </body>

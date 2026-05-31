@@ -6,7 +6,6 @@ Ce dossier est une version statique du preview Base44, préparée pour fonctionn
 
 ```text
 index.html
-404.html
 manifest.json
 .htaccess
 serve-local.py
